@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência de Viagens JTC</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body style="background: url('img brasil/litoral-br.jpg') center/cover no-repeat fixed; position: relative;">
+    <div class="bg-overlay"></div>
+    <nav class="navbar navbar-expand-lg border-bottom mb-4" style="background: rgb(216, 17, 216);">
+        <div class="container justify-content-center">
+            <div class="collapse navbar-collapse show justify-content-center" id="navbarNav">
+                <ul class="navbar-nav mx-auto flex-row gap-3">
+                    <li class="nav-item"><a class="nav-link text-light active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="destinos nacionais.html">Destinos Nacionais</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="destinos internacionais.html">Destinos Internacionais</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="hospedagem.html">Hospedagem</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="pagamentos.html">Pagamentos</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="reservas.html">Reservas</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="container my-5">
+        <h2 class="titulo-centralizado" style="color: #fff;">Reserva de Hospedagem</h2>
+        <form class="mb-5 p-4 rounded" style="background: rgba(0,0,0,0.5); max-width: 500px; margin:auto;">
+            <div class="mb-3">
+                <label for="hotel" class="form-label">Escolha o hotel/pousada:</label>
+                <select id="hotel" name="hotel" class="form-control" required>
+                    <option value="">Selecione...</option>
+                    <option value="Hotel Copacabana Palace">Hotel Copacabana Palace</option>
+                    <option value="Hotel Bella Roma">Hotel Bella Roma</option>
+                    <option value="Hotel Dolphin Noronha">Hotel Dolphin Noronha</option>
+                    <option value="Hotel Marina Park">Hotel Marina Park</option>
+                    <option value="Resort Suites Beach Park">Resort Suites Beach Park</option>
+                    <option value="Resort Grand Hyatt Rio de Janeiro">Resort Grand Hyatt Rio de Janeiro</option>
+                    <option value="Resort Miragem Pousada Noronha">Resort Miragem Pousada Noronha</option>
+                    <option value="Hotel Champs Élysées">Hotel Champs Élysées</option>
+                    <option value="Hotel Manhattan Dreams">Hotel Manhattan Dreams</option>
+                    <option value="Hotel Dream Hollywood">Hotel Dream Hollywood</option>
+                    <option value="Hotel Pestana Miami South Beach">Hotel Pestana Miami South Beach</option>
+                    <option value="Hotel Venice Times">Hotel Venice Times</option>
+                    <option value="Hotel Maison Rouge Strasbourg">Hotel Maison Rouge Strasbourg</option>
+                    <option value="Hotel Grand Miramare">Hotel Grand Miramare</option>
+                    <option value="Hotel Ibis Toulouse Centre">Hotel Ibis Toulouse Centre</option>
+                    <option value="Pousada Barra da Tijuca">Pousada Barra da Tijuca</option>
+                    <option value="Pousada Sol'Lar de Iracema">Pousada Sol'Lar de Iracema</option>
+                    <option value="Pousada Tesouro de Noronha">Pousada Tesouro de Noronha</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="data-inicio" class="form-label">Data de início:</label>
+                <input type="date" id="data-inicio" name="data-inicio" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="data-fim" class="form-label">Data de fim:</label>
+                <input type="date" id="data-fim" name="data-fim" class="form-control" required>
+            </div>
+            <button type="submit" class="btn" style="background-color: #b35400; color: #fff; font-weight: bold;">Reservar Hospedagem</button>
+        </form>
+        <h2 class="titulo-centralizado mt-5" style="color: #fff;">Reserva de Aeroporto (Viagens Internacionais)</h2>
+        <form class="mb-5 p-4 rounded" style="background: rgba(0,0,0,0.5); max-width: 500px; margin:auto;">
+            <div class="mb-3">
+                <label for="destino-internacional" class="form-label">Destino internacional:</label>
+                <select id="destino-internacional" name="destino-internacional" class="form-control" required>
+                    <option value="">Selecione...</option>
+                    <option value="Paris">Paris</option>
+                    <option value="Los Angeles">Los Angeles</option>
+                    <option value="Miami">Miami</option>
+                    <option value="Nova York">Nova York</option>
+                    <option value="Estrasburgo">Estrasburgo</option>
+                    <option value="Toulouse">Toulouse</option>
+                    <option value="Veneza">Veneza</option>
+                    <option value="Riviera Italiana">Riviera Italiana</option>
+                    <option value="Itália">Itália</option>
+                    <option value="Estados Unidos">Estados Unidos</option>
+                    <option value="França">França</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="data-voo" class="form-label">Data do voo:</label>
+                <input type="date" id="data-voo" name="data-voo" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="aeroporto" class="form-label">Aeroporto de embarque:</label>
+                <input type="text" id="aeroporto" name="aeroporto" class="form-control" required>
+            </div>
+            <button type="submit" class="btn" style="background-color: #b35400; color: #fff; font-weight: bold;">Reservar Voo Internacional</button>
+        </form>
+        <h2 class="titulo-centralizado mt-5" style="color: #fff;">Reserva Rodoviária (Viagens Nacionais)</h2>
+        <form class="mb-5 p-4 rounded" style="background: rgba(0,0,0,0.5); max-width: 500px; margin:auto;">
+            <div class="mb-3">
+                <label for="destino-nacional" class="form-label">Destino nacional:</label>
+                <select id="destino-nacional" name="destino-nacional" class="form-control" required>
+                    <option value="">Selecione...</option>
+                    <option value="Rio de Janeiro">Rio de Janeiro</option>
+                    <option value="Fortaleza">Fortaleza</option>
+                    <option value="Fernando de Noronha">Fernando de Noronha</option>
+                    <option value="Recife-Pernambuco">Recife-Pernambuco</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="data-onibus" class="form-label">Data da viagem:</label>
+                <input type="date" id="data-onibus" name="data-onibus" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="rodoviaria" class="form-label">Rodoviária de embarque:</label>
+                <input type="text" id="rodoviaria" name="rodoviaria" class="form-control" required>
+            </div>
+            <button type="submit" class="btn" style="background-color: #b35400; color: #fff; font-weight: bold;">Reservar Viagem Rodoviária</button>
+        </form>
+    </section>
+    <!-- Rodapé -->
+    <footer>
+        <h1 class="titulo-centralizado">&copy;2025 Agência de Viagens. Todos os direitos reservados</h1>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

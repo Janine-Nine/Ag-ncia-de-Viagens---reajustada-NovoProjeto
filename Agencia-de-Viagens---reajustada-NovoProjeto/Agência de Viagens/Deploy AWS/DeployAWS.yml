@@ -1,0 +1,9 @@
+Internet
+   |
+CloudFront
+   |
+EC2 (Spring Boot API)
+   |
+RDS MySQL
+   |
+S3 (Frontend)
