@@ -1,0 +1,29 @@
+<h1>Dashboard Admin</h1>
+
+<table id="reservas"></table>
+
+<script>
+
+fetch("http://localhost:8080/admin/reservas")
+.then(res=>res.json())
+.then(data=>{
+
+let html="";
+
+data.forEach(r=>{
+
+html+=`
+<tr>
+<td>${r.nome}</td>
+<td>${r.destino}</td>
+<td>${r.dataViagem}</td>
+</tr>
+`;
+
+});
+
+document.getElementById("reservas").innerHTML=html;
+
+});
+
+</script>
